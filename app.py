@@ -5,7 +5,7 @@ col1, col2 = st.columns([1, 3])  # Create two columns
 
 # Display logo on the left
 with col1:
-    st.image("logo.png", width=120)  # Adjust width as needed
+    st.image("logo.PNG", width=120)  # Adjust width as needed
 
 # Display "Trading Hub Academy" on the right
 with col2:
@@ -15,7 +15,7 @@ with col2:
         """,
         unsafe_allow_html=True,
     )
-    
+
 def calculate_sl_tp(account_balance, risk_percentage, entry_price, lot_size, rr_ratio):
     try:
         risk_amount = (account_balance * risk_percentage) / 100
